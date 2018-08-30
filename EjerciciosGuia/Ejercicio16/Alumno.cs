@@ -32,13 +32,24 @@ namespace Ejercicio16
 
             if (this._nota1 >= 4 && this._nota2 >= 4)
             {
-                this._notaFinal = numero.Next();
+                this._notaFinal = numero.Next(4, 10);
             }
         }
 
         public string Mostrar()
         {
-            return "Hola";
+            string texto = "Alumno desaprobado";
+
+            Console.WriteLine("Nombre: " + this.nombre);
+            Console.WriteLine("Apellido: " + this.apellido);
+            Console.WriteLine("Legajo: " + this.legajo);
+
+            if(this._notaFinal != -1)
+            {
+                texto = "Nota final: " + Convert. ToString(this._notaFinal);
+            }
+
+            return texto;
         }
 
 

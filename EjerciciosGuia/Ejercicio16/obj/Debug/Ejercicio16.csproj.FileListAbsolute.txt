@@ -1,0 +1,7 @@
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio16\bin\Debug\Ejercicio16.exe.config
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio16\bin\Debug\Ejercicio16.exe
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio16\bin\Debug\Ejercicio16.pdb
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio16\obj\Debug\Ejercicio16.csproj.CoreCompileInputs.cache
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio16\obj\Debug\Ejercicio16.exe
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio16\obj\Debug\Ejercicio16.pdb
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio16\obj\Debug\Ejercicio16.csprojAssemblyReference.cache
