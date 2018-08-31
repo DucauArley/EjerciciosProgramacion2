@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace Ejercicio16
 {
@@ -31,7 +31,9 @@ namespace Ejercicio16
             alumno3.Estudiar(4, 4);
 
             alumno1.CalcularFinal();
+            Thread.Sleep(200);
             alumno2.CalcularFinal();
+            Thread.Sleep(200);
             alumno3.CalcularFinal();
 
             Console.WriteLine(alumno1.Mostrar());
