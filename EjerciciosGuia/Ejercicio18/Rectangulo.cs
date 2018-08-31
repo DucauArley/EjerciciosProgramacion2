@@ -48,6 +48,9 @@ namespace PruebaGeometria
             int baseRectangulo = 0;
             int alturaRectangulo = 0;
 
+            baseRectangulo = this.vertice4.GetX() - this.vertice1.GetX();
+            alturaRectangulo = this.vertice1.GetY() - this.vertice2.GetY();
+
 
             return 0;
         }
