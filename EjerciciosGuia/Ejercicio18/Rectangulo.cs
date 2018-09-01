@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Geometria;
 
-namespace PruebaGeometria
+namespace Geometria
 {
     class Rectangulo
     {
@@ -45,14 +44,38 @@ namespace PruebaGeometria
 
         public float Area()
         {
-            int baseRectangulo = 0;
-            int alturaRectangulo = 0;
+            float baseRectangulo = 0;
+            float alturaRectangulo = 0;
 
             baseRectangulo = this.vertice4.GetX() - this.vertice1.GetX();
             alturaRectangulo = this.vertice1.GetY() - this.vertice2.GetY();
 
+            this.area = baseRectangulo * alturaRectangulo;
 
-            return 0;
+            return this.area;
+        }
+
+        public float Perimertro()
+        {
+            float baseRectangulo = 0;
+            float alturaRectangulo = 0;
+
+            baseRectangulo = this.vertice4.GetX() - this.vertice1.GetX();
+            alturaRectangulo = this.vertice1.GetY() - this.vertice2.GetY();
+
+            this.perimetro = (baseRectangulo + alturaRectangulo) * 2;
+
+            return this.perimetro;
+        }
+
+        public void Mostrar()
+        {
+            Console.WriteLine("Vertice 1: (" + this.vertice1.GetX() + "," + this.vertice1.GetY() + ")");
+            Console.WriteLine("Vertice 1: (" + this.vertice2.GetX() + "," + this.vertice2.GetY() + ")");
+            Console.WriteLine("Vertice 1: (" + this.vertice3.GetX() + "," + this.vertice3.GetY() + ")");
+            Console.WriteLine("Vertice 1: (" + this.vertice4.GetX() + "," + this.vertice4.GetY() + ")");
+            Console.WriteLine("Area: " + GetArea());
+            Console.WriteLine("Perimetro: " + GetPerimetro());
         }
 
 

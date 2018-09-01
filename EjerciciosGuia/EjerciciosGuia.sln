@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Express 15 for Windows Desktop
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio1", "Ejercicio1\Ejercicio1.csproj", "{0E9A83CE-189E-43C8-A04C-619C67E982D7}"
@@ -38,6 +38,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio17", "Ejercicio17\Ejercicio17.csproj", "{6B4675C0-5377-4DA3-9157-CC354FCDCA85}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio18", "Ejercicio18\Ejercicio18.csproj", "{70278F94-CCD6-4B77-9E75-51281D776AD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio19", "Ejercicio19\Ejercicio19.csproj", "{08ABDCFC-8D9D-4B95-8E2D-529B2769963D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{70278F94-CCD6-4B77-9E75-51281D776AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70278F94-CCD6-4B77-9E75-51281D776AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70278F94-CCD6-4B77-9E75-51281D776AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08ABDCFC-8D9D-4B95-8E2D-529B2769963D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08ABDCFC-8D9D-4B95-8E2D-529B2769963D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08ABDCFC-8D9D-4B95-8E2D-529B2769963D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08ABDCFC-8D9D-4B95-8E2D-529B2769963D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
