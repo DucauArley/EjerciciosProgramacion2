@@ -42,5 +42,35 @@ namespace Ejercicio19
             return resultado;
         }
 
+        public static explicit operator int(Sumador s)
+        {
+            int cantidad;
+
+            cantidad = s.cantidadSumas;
+
+            return cantidad;
+        }
+
+        public static long operator+(Sumador s1, Sumador s2)
+        {
+            long respuesta;
+
+            respuesta = (int)s1 + (int)s2;
+            
+            return respuesta;
+        }
+
+        public static bool operator|(Sumador s1, Sumador s2)
+        {
+            bool ok = false;
+
+            if((int)s1 == (int)s2)
+            {
+                ok = true;
+            }
+
+            return ok;
+        }
+        
     }
 }

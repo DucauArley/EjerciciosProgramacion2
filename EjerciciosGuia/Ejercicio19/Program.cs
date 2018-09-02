@@ -10,10 +10,20 @@ namespace Ejercicio19
     {
         static void Main(string[] args)
         {
-            Sumador a = new Sumador();
+            Sumador a = new Sumador(7);
+            Sumador b = new Sumador(8);
+            long numero;
 
-            Console.WriteLine(a.Sumar(4, 5));
+            numero = a + b;
 
+            if (a | b)
+            {
+                Console.WriteLine("El numero es: " + numero);
+            }
+            else
+            {
+                Console.WriteLine("No son iguales");
+            }
 
             Console.ReadKey();
         }
