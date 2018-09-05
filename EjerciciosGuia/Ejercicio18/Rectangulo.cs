@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,8 +47,8 @@ namespace Geometria
             float baseRectangulo = 0;
             float alturaRectangulo = 0;
 
-            baseRectangulo = this.vertice4.GetX() - this.vertice1.GetX();
-            alturaRectangulo = this.vertice1.GetY() - this.vertice2.GetY();
+            baseRectangulo = Math.Abs(this.vertice4.GetX() - this.vertice1.GetX());
+            alturaRectangulo = Math.Abs(this.vertice1.GetY() - this.vertice2.GetY());
 
             this.area = baseRectangulo * alturaRectangulo;
 
@@ -60,8 +60,8 @@ namespace Geometria
             float baseRectangulo = 0;
             float alturaRectangulo = 0;
 
-            baseRectangulo = this.vertice4.GetX() - this.vertice1.GetX();
-            alturaRectangulo = this.vertice1.GetY() - this.vertice2.GetY();
+            baseRectangulo = Math.Abs(this.vertice4.GetX() - this.vertice1.GetX());
+            alturaRectangulo = Math.Abs(this.vertice1.GetY() - this.vertice2.GetY());
 
             this.perimetro = (baseRectangulo + alturaRectangulo) * 2;
 
