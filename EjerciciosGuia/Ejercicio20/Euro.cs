@@ -27,7 +27,7 @@ namespace Billetes
         }
 
 
-    public double GetCantidad()
+        public double GetCantidad()
         {
             double cantidad;
 

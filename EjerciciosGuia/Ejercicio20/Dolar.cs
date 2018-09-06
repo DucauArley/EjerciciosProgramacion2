@@ -44,11 +44,16 @@ namespace Billetes
             return cotizacion;
         }
 
-        public static explicit operator Euro(Dolar d)
+        public static explicit operator Euro(Dolar dolar)
         {
-         
-          
-         
+            Euro euro = new Euro();
+
+            euro = GetCotizacion();
+
+
+
+
+            
         }
 
 
