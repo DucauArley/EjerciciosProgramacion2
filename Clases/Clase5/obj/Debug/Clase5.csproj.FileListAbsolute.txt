@@ -5,3 +5,10 @@ D:\VisualStudio\Clases\Clase5\obj\Debug\Clase5.csprojAssemblyReference.cache
 D:\VisualStudio\Clases\Clase5\obj\Debug\Clase5.csproj.CoreCompileInputs.cache
 D:\VisualStudio\Clases\Clase5\obj\Debug\Clase5.exe
 D:\VisualStudio\Clases\Clase5\obj\Debug\Clase5.pdb
+D:\VisualStudio\EjerciciosProgramacion2\Clases\Clase5\bin\Debug\Clase5.exe.config
+D:\VisualStudio\EjerciciosProgramacion2\Clases\Clase5\bin\Debug\Clase5.exe
+D:\VisualStudio\EjerciciosProgramacion2\Clases\Clase5\bin\Debug\Clase5.pdb
+D:\VisualStudio\EjerciciosProgramacion2\Clases\Clase5\obj\Debug\Clase5.csprojAssemblyReference.cache
+D:\VisualStudio\EjerciciosProgramacion2\Clases\Clase5\obj\Debug\Clase5.csproj.CoreCompileInputs.cache
+D:\VisualStudio\EjerciciosProgramacion2\Clases\Clase5\obj\Debug\Clase5.exe
+D:\VisualStudio\EjerciciosProgramacion2\Clases\Clase5\obj\Debug\Clase5.pdb

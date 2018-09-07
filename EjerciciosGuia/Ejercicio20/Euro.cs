@@ -13,7 +13,7 @@ namespace Billetes
 
         private Euro()
         {
-            cotizRespectoDolar = float.Parse("0,7330");
+            cotizRespectoDolar = 0.7330F;
         }
 
         public Euro(double cantidad): this ()
@@ -44,6 +44,111 @@ namespace Billetes
 
             return cotizacion;
         }
+
+        public static explicit operator Dolar(Euro euro)
+        {
+            Dolar dolar = new Dolar(euro.GetCantidad() * Dolar.GetCotizacion());
+
+            return dolar;
+        }
+
+        public static explicit operator Peso(Euro euro)
+        {
+            Peso peso = new Peso(euro.GetCantidad() * Peso.GetCotizacion());
+
+            return peso;
+        }
+
+        public static implicit operator Euro(double cantidad)
+        {
+            Euro euro = new Euro(cantidad);
+
+            return euro;
+        }
+
+        public static bool operator ==(Euro e, Dolar d)
+        {
+            bool ok = false;
+
+            if (((Dolar)e).GetCantidad() == d.GetCantidad())
+            {
+                ok = true;
+            }
+
+            return ok;
+        }
+
+        public static bool operator ==(Euro e, Peso p)
+        {
+            bool ok = false;
+
+            if (((Peso)e).GetCantidad() == p.GetCantidad())
+            {
+                ok = true;
+            }
+
+            return ok;
+        }
+
+        public static bool operator ==(Euro e1, Euro e2)
+        {
+            bool ok = false;
+
+            if (e1.GetCantidad() == e2.GetCantidad())
+            {
+                ok = true;
+            }
+
+            return ok;
+        }
+
+        public static bool operator !=(Euro e1, Euro e2)
+        {
+            return !(e1 == e2);
+        }
+
+
+        public static bool operator !=(Euro e, Peso p)
+        {
+            return !(e == p);
+        }
+
+
+        public static bool operator !=(Euro e, Dolar d)
+        {
+            return !(e == d);
+        }
+
+
+        public static Euro operator +(Euro e, Dolar d)
+        {
+            Euro euro = new Euro(e.GetCantidad() + (d.GetCantidad() * Dolar.GetCotizacion()));
+
+            return euro;
+        }
+
+        public static Euro operator +(Euro e, Peso p)
+        {
+            Euro euro = new Euro(e.GetCantidad() + (p.GetCantidad() * Peso.GetCotizacion()));
+
+            return euro;
+        }
+
+        public static Euro operator -(Euro e, Dolar d)
+        {
+            Euro euro = new Euro(e.GetCantidad() - (d.GetCantidad() * Dolar.GetCotizacion()));
+
+            return euro;
+        }
+
+        public static Euro operator -(Euro e, Peso p)
+        {
+            Euro euro = new Euro(e.GetCantidad() - (p.GetCantidad() * Peso.GetCotizacion()));
+
+            return euro;
+        }
+
+
 
 
     }

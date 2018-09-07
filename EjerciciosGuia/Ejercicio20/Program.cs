@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Billetes;
+
 
 namespace Ejercicio20
 {
@@ -10,10 +12,12 @@ namespace Ejercicio20
     {
         static void Main(string[] args)
         {
-            float numero = float.Parse("0,484");
+            Peso peso = new Peso(17.55);
+            Dolar dolar = new Dolar(1);
 
-            Console.WriteLine("Float: " + numero);
+            dolar = dolar + peso;
 
+            Console.WriteLine("La cantidad de dolares es: " + dolar.GetCantidad());
 
             Console.ReadKey();
         }
