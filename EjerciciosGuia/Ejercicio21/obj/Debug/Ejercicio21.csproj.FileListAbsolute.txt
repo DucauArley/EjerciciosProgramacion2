@@ -1,0 +1,7 @@
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\bin\Debug\Ejercicio21.exe.config
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\bin\Debug\Ejercicio21.exe
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\bin\Debug\Ejercicio21.pdb
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\obj\Debug\Ejercicio21.csprojAssemblyReference.cache
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\obj\Debug\Ejercicio21.csproj.CoreCompileInputs.cache
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\obj\Debug\Ejercicio21.exe
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\obj\Debug\Ejercicio21.pdb

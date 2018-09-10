@@ -14,10 +14,17 @@ namespace Ejercicio20
         {
             Peso peso = new Peso(17.55);
             Dolar dolar = new Dolar(1);
-
-            dolar = dolar + peso;
+            Euro euro = new Euro(0.733);
 
             Console.WriteLine("La cantidad de dolares es: " + dolar.GetCantidad());
+            Console.WriteLine("La cantidad de pesos es: " + peso.GetCantidad());
+
+            dolar = (Dolar)(euro + peso);
+            
+            if (euro == peso)
+            {
+                Console.WriteLine("La cantidad de dolares es: " + dolar.GetCantidad());
+            }
 
             Console.ReadKey();
         }

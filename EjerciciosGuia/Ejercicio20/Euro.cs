@@ -33,6 +33,8 @@ namespace Billetes
 
             cantidad = this.cantidad;
 
+            cantidad = Math.Round(cantidad, 4);
+
             return cantidad;
         }
 
@@ -47,14 +49,14 @@ namespace Billetes
 
         public static explicit operator Dolar(Euro euro)
         {
-            Dolar dolar = new Dolar(euro.GetCantidad() * Dolar.GetCotizacion());
+            Dolar dolar = new Dolar(euro.GetCantidad() / Euro.GetCotizacion());
 
             return dolar;
         }
 
         public static explicit operator Peso(Euro euro)
         {
-            Peso peso = new Peso(euro.GetCantidad() * Peso.GetCotizacion());
+            Peso peso = new Peso((euro.GetCantidad() / Euro.GetCotizacion()) * Peso.GetCotizacion());
 
             return peso;
         }
@@ -122,28 +124,28 @@ namespace Billetes
 
         public static Euro operator +(Euro e, Dolar d)
         {
-            Euro euro = new Euro(e.GetCantidad() + (d.GetCantidad() * Dolar.GetCotizacion()));
+            Euro euro = new Euro(e.GetCantidad() + ((Euro)d).GetCantidad());
 
             return euro;
         }
 
         public static Euro operator +(Euro e, Peso p)
         {
-            Euro euro = new Euro(e.GetCantidad() + (p.GetCantidad() * Peso.GetCotizacion()));
+            Euro euro = new Euro(e.GetCantidad() + ((Euro)p).GetCantidad());
 
             return euro;
         }
 
         public static Euro operator -(Euro e, Dolar d)
         {
-            Euro euro = new Euro(e.GetCantidad() - (d.GetCantidad() * Dolar.GetCotizacion()));
+            Euro euro = new Euro(e.GetCantidad() - ((Euro)d).GetCantidad());
 
             return euro;
         }
 
         public static Euro operator -(Euro e, Peso p)
         {
-            Euro euro = new Euro(e.GetCantidad() - (p.GetCantidad() * Peso.GetCotizacion()));
+            Euro euro = new Euro(e.GetCantidad() - ((Euro)p).GetCantidad());
 
             return euro;
         }

@@ -32,6 +32,8 @@ namespace Billetes
 
             cantidad = this.cantidad;
 
+            cantidad = Math.Round(cantidad, 4);
+
             return cantidad;
         }
 
@@ -46,7 +48,7 @@ namespace Billetes
 
         public static explicit operator Euro(Dolar dolar)
         {
-            Euro euro = new Euro(dolar.GetCantidad() * Euro.GetCotizacion());
+            Euro euro = new Euro(dolar.GetCantidad() / Euro.GetCotizacion());
 
             return euro;
         }
@@ -120,28 +122,28 @@ namespace Billetes
 
         public static Dolar operator +(Dolar d, Euro e)
         {
-            Dolar dolar = new Dolar(d.GetCantidad() + (e.GetCantidad() * Euro.GetCotizacion()));
+            Dolar dolar = new Dolar(d.GetCantidad() + ((Dolar)e).GetCantidad());
 
             return dolar;
         }
 
         public static Dolar operator +(Dolar d, Peso p)
         {
-            Dolar dolar = new Dolar(d.GetCantidad() + ((Dolar) p).GetCantidad());//Es este########################
+            Dolar dolar = new Dolar(d.GetCantidad() + ((Dolar) p).GetCantidad());
 
             return dolar;
         }
 
         public static Dolar operator -(Dolar d, Euro e)
         {
-            Dolar dolar = new Dolar(d.GetCantidad() - (e.GetCantidad() * Euro.GetCotizacion()));
+            Dolar dolar = new Dolar(d.GetCantidad() - ((Dolar) e).GetCantidad());
 
             return dolar;
         }
 
         public static Dolar operator -(Dolar d, Peso p)
         {
-            Dolar dolar = new Dolar(d.GetCantidad() - (p.GetCantidad() * Peso.GetCotizacion()));
+            Dolar dolar = new Dolar(d.GetCantidad() - ((Dolar)p).GetCantidad());
 
             return dolar;
         }
