@@ -10,6 +10,14 @@ namespace Ejercicio13
     {
         static void Main(string[] args)
         {
+            double numero = 46;
+            string binario = "10101010";
+
+            numero = Conversor.BinarioDecimal(binario);
+
+            Console.WriteLine(numero);
+
+            Console.ReadKey();
         }
     }
 }

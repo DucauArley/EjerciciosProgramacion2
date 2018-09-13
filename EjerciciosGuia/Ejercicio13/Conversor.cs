@@ -24,16 +24,32 @@ namespace Ejercicio13
                     binario += "1";
                 }
 
-                numero = numero / 2;
+                numero = Math.Truncate(numero / 2);
             }
 
             binario += numero;
+
+            binario.Reverse();
 
             return binario;
         }
 
         public static double BinarioDecimal(string binario)
         {
+            double numero = 0;
+            int j = binario.Length - 1;
+
+            for (int i = 0; i < binario.Length; i++)
+            {
+                numero += double.Parse(binario[j].ToString()) * Math.Pow(2, i);
+                j--;
+            }
+
+            return numero;
+
+
+
+
             return 0;
         }
 

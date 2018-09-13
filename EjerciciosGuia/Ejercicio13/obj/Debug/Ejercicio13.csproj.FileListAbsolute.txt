@@ -1,0 +1,7 @@
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio13\bin\Debug\Ejercicio13.exe.config
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio13\bin\Debug\Ejercicio13.exe
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio13\bin\Debug\Ejercicio13.pdb
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio13\obj\Debug\Ejercicio13.csprojAssemblyReference.cache
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio13\obj\Debug\Ejercicio13.csproj.CoreCompileInputs.cache
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio13\obj\Debug\Ejercicio13.exe
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio13\obj\Debug\Ejercicio13.pdb
