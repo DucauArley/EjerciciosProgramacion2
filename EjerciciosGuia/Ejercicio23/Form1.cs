@@ -43,12 +43,53 @@ namespace Ejercicio23
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonEuro_Click(object sender, EventArgs e)
         {
+            double numero;
 
+            if(double.TryParse(textEuro.Text, out numero))
+            {
+                Euro euro = new Euro(numero);
+               
+                textEuroEuro.Text = "" + euro.GetCantidad();
+                textEuroDolar.Text = "" + ((Dolar) euro).GetCantidad();
+                textEuroPeso.Text = "" + ((Peso)euro).GetCantidad();
+            }
+        }
 
+        private void buttonDolar_Click(object sender, EventArgs e)
+        {
+            double numero;
 
+            if (double.TryParse(textDolar.Text, out numero))
+            {
+                Dolar dolar = new Dolar(numero);
 
+                textDolarEuro.Text = "" + ((Euro) dolar).GetCantidad();
+                textDolarDolar.Text = "" + dolar.GetCantidad();
+                textDolarPeso.Text = "" + ((Peso)dolar).GetCantidad();
+            }
+
+        }
+
+        private void buttonPeso_Click(object sender, EventArgs e)
+        {
+            double numero;
+
+            if (double.TryParse(textPeso.Text, out numero))
+            {
+                Peso peso = new Peso(numero);
+
+                textPesoEuro.Text = "" + ((Euro) peso).GetCantidad();
+                textPesoDolar.Text = "" + ((Dolar)peso).GetCantidad();
+                textPesoPeso.Text = "" + peso.GetCantidad();
+            }
+
+        }
+
+        private void textEuroEuro_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

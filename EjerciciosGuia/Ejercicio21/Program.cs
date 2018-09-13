@@ -10,7 +10,7 @@ namespace Ejercicio21
     {
         static void Main(string[] args)
         {
-            Kelvin kel = new Kelvin(255.9277);
+            Kelvin kel = new Kelvin(255.928);
             Celsius cel = new Celsius(-17.2222);
             Fahrenheit fahr = new Fahrenheit(1);
             
@@ -19,7 +19,10 @@ namespace Ejercicio21
             {
                 Console.WriteLine("Entro");
             }
-
+            else
+            {
+                Console.WriteLine("No entro");
+            }
 
             Console.ReadKey();
         }

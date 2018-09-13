@@ -58,7 +58,7 @@ namespace Ejercicio21
         {
             Kelvin kel = new Kelvin(fahr.GetCantidad() / Kelvin.GetCambio());
 
-            return kel;//#############################
+            return kel;
         }
 
         public static implicit operator Fahrenheit(double cantidad)
@@ -84,7 +84,7 @@ namespace Ejercicio21
         {
             bool ok = false;
 
-            if (((Kelvin)f).GetCantidad() == k.GetCantidad())
+            if (f.GetCantidad() == ((Fahrenheit)k).GetCantidad())
             {
                 ok = true;
             }

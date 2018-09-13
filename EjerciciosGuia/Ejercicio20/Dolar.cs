@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Billetes
 {
-    class Dolar
+    public class Dolar
     {
         private double cantidad;
         private static float cotizRespectoDolar;
 
-        private Dolar()
+        static Dolar()
         {
             cotizRespectoDolar = 1;
         }
 
-        public Dolar(double cantidad): this()
+        public Dolar(double cantidad)
         {
             this.cantidad = cantidad;
         }

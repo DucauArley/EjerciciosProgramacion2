@@ -1,0 +1,14 @@
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\obj\Debug\Ejercicio23.csprojAssemblyReference.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\obj\Debug\Ejercicio23.Form1.resources
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\obj\Debug\Ejercicio23.Properties.Resources.resources
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\obj\Debug\Ejercicio23.csproj.GenerateResource.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\obj\Debug\Ejercicio23.csproj.CoreCompileInputs.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\bin\Debug\Ejercicio23.exe.config
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\bin\Debug\Ejercicio23.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\bin\Debug\Ejercicio23.pdb
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\bin\Debug\Ejercicio20.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\bin\Debug\Ejercicio20.pdb
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\bin\Debug\Ejercicio20.exe.config
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\obj\Debug\Ejercicio23.csproj.CopyComplete
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\obj\Debug\Ejercicio23.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio23\obj\Debug\Ejercicio23.pdb

@@ -5,3 +5,10 @@ C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\o
 C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\obj\Debug\Ejercicio21.csproj.CoreCompileInputs.cache
 C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\obj\Debug\Ejercicio21.exe
 C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\obj\Debug\Ejercicio21.pdb
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\bin\Debug\Ejercicio21.exe.config
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\bin\Debug\Ejercicio21.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\bin\Debug\Ejercicio21.pdb
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\obj\Debug\Ejercicio21.csprojAssemblyReference.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\obj\Debug\Ejercicio21.csproj.CoreCompileInputs.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\obj\Debug\Ejercicio21.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio21\obj\Debug\Ejercicio21.pdb

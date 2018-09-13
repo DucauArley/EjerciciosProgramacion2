@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textEuro = new System.Windows.Forms.TextBox();
+            this.textDolar = new System.Windows.Forms.TextBox();
+            this.textPeso = new System.Windows.Forms.TextBox();
+            this.buttonEuro = new System.Windows.Forms.Button();
+            this.buttonDolar = new System.Windows.Forms.Button();
+            this.buttonPeso = new System.Windows.Forms.Button();
+            this.textEuroEuro = new System.Windows.Forms.TextBox();
+            this.textDolarEuro = new System.Windows.Forms.TextBox();
+            this.textPesoEuro = new System.Windows.Forms.TextBox();
+            this.textEuroDolar = new System.Windows.Forms.TextBox();
+            this.textDolarDolar = new System.Windows.Forms.TextBox();
+            this.textPesoDolar = new System.Windows.Forms.TextBox();
+            this.textEuroPeso = new System.Windows.Forms.TextBox();
+            this.textPesoPeso = new System.Windows.Forms.TextBox();
+            this.textDolarPeso = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,118 +51,121 @@
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textEuro
             // 
-            this.textBox1.Location = new System.Drawing.Point(78, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textEuro.Location = new System.Drawing.Point(78, 50);
+            this.textEuro.Name = "textEuro";
+            this.textEuro.Size = new System.Drawing.Size(100, 20);
+            this.textEuro.TabIndex = 0;
+            this.textEuro.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // textDolar
             // 
-            this.textBox2.Location = new System.Drawing.Point(78, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.textDolar.Location = new System.Drawing.Point(78, 76);
+            this.textDolar.Name = "textDolar";
+            this.textDolar.Size = new System.Drawing.Size(100, 20);
+            this.textDolar.TabIndex = 1;
             // 
-            // textBox3
+            // textPeso
             // 
-            this.textBox3.Location = new System.Drawing.Point(78, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.textPeso.Location = new System.Drawing.Point(78, 102);
+            this.textPeso.Name = "textPeso";
+            this.textPeso.Size = new System.Drawing.Size(100, 20);
+            this.textPeso.TabIndex = 2;
             // 
-            // button1
+            // buttonEuro
             // 
-            this.button1.Location = new System.Drawing.Point(194, 47);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "->";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonEuro.Location = new System.Drawing.Point(194, 47);
+            this.buttonEuro.Name = "buttonEuro";
+            this.buttonEuro.Size = new System.Drawing.Size(75, 23);
+            this.buttonEuro.TabIndex = 3;
+            this.buttonEuro.Text = "->";
+            this.buttonEuro.UseVisualStyleBackColor = true;
+            this.buttonEuro.Click += new System.EventHandler(this.buttonEuro_Click);
             // 
-            // button2
+            // buttonDolar
             // 
-            this.button2.Location = new System.Drawing.Point(194, 73);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "->";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonDolar.Location = new System.Drawing.Point(194, 73);
+            this.buttonDolar.Name = "buttonDolar";
+            this.buttonDolar.Size = new System.Drawing.Size(75, 23);
+            this.buttonDolar.TabIndex = 4;
+            this.buttonDolar.Text = "->";
+            this.buttonDolar.UseVisualStyleBackColor = true;
+            this.buttonDolar.Click += new System.EventHandler(this.buttonDolar_Click);
             // 
-            // button3
+            // buttonPeso
             // 
-            this.button3.Location = new System.Drawing.Point(194, 99);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "->";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonPeso.Location = new System.Drawing.Point(194, 99);
+            this.buttonPeso.Name = "buttonPeso";
+            this.buttonPeso.Size = new System.Drawing.Size(75, 23);
+            this.buttonPeso.TabIndex = 5;
+            this.buttonPeso.Text = "->";
+            this.buttonPeso.UseVisualStyleBackColor = true;
+            this.buttonPeso.Click += new System.EventHandler(this.buttonPeso_Click);
             // 
-            // textBox4
+            // textEuroEuro
             // 
-            this.textBox4.Location = new System.Drawing.Point(275, 50);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 6;
+            this.textEuroEuro.Location = new System.Drawing.Point(275, 50);
+            this.textEuroEuro.Name = "textEuroEuro";
+            this.textEuroEuro.Size = new System.Drawing.Size(100, 20);
+            this.textEuroEuro.TabIndex = 6;
+            this.textEuroEuro.TextChanged += new System.EventHandler(this.textEuroEuro_TextChanged);
             // 
-            // textBox5
+            // textDolarEuro
             // 
-            this.textBox5.Location = new System.Drawing.Point(275, 76);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 7;
+            this.textDolarEuro.Location = new System.Drawing.Point(275, 76);
+            this.textDolarEuro.Name = "textDolarEuro";
+            this.textDolarEuro.Size = new System.Drawing.Size(100, 20);
+            this.textDolarEuro.TabIndex = 7;
             // 
-            // textBox6
+            // textPesoEuro
             // 
-            this.textBox6.Location = new System.Drawing.Point(275, 101);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 8;
+            this.textPesoEuro.Location = new System.Drawing.Point(275, 101);
+            this.textPesoEuro.Name = "textPesoEuro";
+            this.textPesoEuro.Size = new System.Drawing.Size(100, 20);
+            this.textPesoEuro.TabIndex = 8;
             // 
-            // textBox7
+            // textEuroDolar
             // 
-            this.textBox7.Location = new System.Drawing.Point(381, 50);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 9;
+            this.textEuroDolar.Location = new System.Drawing.Point(381, 50);
+            this.textEuroDolar.Name = "textEuroDolar";
+            this.textEuroDolar.Size = new System.Drawing.Size(100, 20);
+            this.textEuroDolar.TabIndex = 9;
             // 
-            // textBox8
+            // textDolarDolar
             // 
-            this.textBox8.Location = new System.Drawing.Point(381, 75);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 10;
+            this.textDolarDolar.Location = new System.Drawing.Point(381, 75);
+            this.textDolarDolar.Name = "textDolarDolar";
+            this.textDolarDolar.Size = new System.Drawing.Size(100, 20);
+            this.textDolarDolar.TabIndex = 10;
             // 
-            // textBox9
+            // textPesoDolar
             // 
-            this.textBox9.Location = new System.Drawing.Point(381, 101);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 11;
+            this.textPesoDolar.Location = new System.Drawing.Point(381, 101);
+            this.textPesoDolar.Name = "textPesoDolar";
+            this.textPesoDolar.Size = new System.Drawing.Size(100, 20);
+            this.textPesoDolar.TabIndex = 11;
             // 
-            // textBox10
+            // textEuroPeso
             // 
-            this.textBox10.Location = new System.Drawing.Point(487, 50);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 12;
+            this.textEuroPeso.Location = new System.Drawing.Point(487, 50);
+            this.textEuroPeso.Name = "textEuroPeso";
+            this.textEuroPeso.Size = new System.Drawing.Size(100, 20);
+            this.textEuroPeso.TabIndex = 12;
             // 
-            // textBox11
+            // textPesoPeso
             // 
-            this.textBox11.Location = new System.Drawing.Point(487, 101);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 13;
+            this.textPesoPeso.Location = new System.Drawing.Point(487, 101);
+            this.textPesoPeso.Name = "textPesoPeso";
+            this.textPesoPeso.Size = new System.Drawing.Size(100, 20);
+            this.textPesoPeso.TabIndex = 13;
             // 
-            // textBox12
+            // textDolarPeso
             // 
-            this.textBox12.Location = new System.Drawing.Point(487, 76);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 14;
+            this.textDolarPeso.Location = new System.Drawing.Point(487, 76);
+            this.textDolarPeso.Name = "textDolarPeso";
+            this.textDolarPeso.Size = new System.Drawing.Size(100, 20);
+            this.textDolarPeso.TabIndex = 14;
             // 
             // label1
             // 
@@ -235,21 +238,21 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textDolarPeso);
+            this.Controls.Add(this.textPesoPeso);
+            this.Controls.Add(this.textEuroPeso);
+            this.Controls.Add(this.textPesoDolar);
+            this.Controls.Add(this.textDolarDolar);
+            this.Controls.Add(this.textEuroDolar);
+            this.Controls.Add(this.textPesoEuro);
+            this.Controls.Add(this.textDolarEuro);
+            this.Controls.Add(this.textEuroEuro);
+            this.Controls.Add(this.buttonPeso);
+            this.Controls.Add(this.buttonDolar);
+            this.Controls.Add(this.buttonEuro);
+            this.Controls.Add(this.textPeso);
+            this.Controls.Add(this.textDolar);
+            this.Controls.Add(this.textEuro);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Click += new System.EventHandler(this.Form1_Load);
@@ -260,21 +263,21 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textEuro;
+        private System.Windows.Forms.TextBox textDolar;
+        private System.Windows.Forms.TextBox textPeso;
+        private System.Windows.Forms.Button buttonEuro;
+        private System.Windows.Forms.Button buttonDolar;
+        private System.Windows.Forms.Button buttonPeso;
+        private System.Windows.Forms.TextBox textEuroEuro;
+        private System.Windows.Forms.TextBox textDolarEuro;
+        private System.Windows.Forms.TextBox textPesoEuro;
+        private System.Windows.Forms.TextBox textEuroDolar;
+        private System.Windows.Forms.TextBox textDolarDolar;
+        private System.Windows.Forms.TextBox textPesoDolar;
+        private System.Windows.Forms.TextBox textEuroPeso;
+        private System.Windows.Forms.TextBox textPesoPeso;
+        private System.Windows.Forms.TextBox textDolarPeso;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

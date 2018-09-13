@@ -49,9 +49,9 @@ namespace Ejercicio21
 
         public static explicit operator Fahrenheit(Kelvin kel)
         {
-            Fahrenheit fahr = new Fahrenheit(kel.GetCantidad() / Kelvin.GetCambio());
+            Fahrenheit fahr = new Fahrenheit(kel.GetCantidad() * (9/5) - 459.67F);
 
-            return fahr;
+            return fahr;//################
         }
 
         public static explicit operator Celsius(Kelvin kel)

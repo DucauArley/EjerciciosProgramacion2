@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Billetes
 {
-    class Peso
+    public class Peso
     {
         private double cantidad;
         private static float cotizRespectoDolar;
 
-        private Peso()
+        static Peso()
         {
             cotizRespectoDolar = 17.55F;
         }
 
-        public Peso(double cantidad) : this()
+        public Peso(double cantidad)
         {
             this.cantidad = cantidad;
         }
