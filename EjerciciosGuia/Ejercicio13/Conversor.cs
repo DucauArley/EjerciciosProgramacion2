@@ -16,21 +16,18 @@ namespace Ejercicio13
             {
                 if (numero % 2 == 0)
                 {
-                    binario += "0";
-
+                    binario = "0" + binario;
                 }
                 else
                 {
-                    binario += "1";
+                    binario = "1" + binario;
                 }
 
                 numero = Math.Truncate(numero / 2);
             }
 
-            binario += numero;
-
-            binario.Reverse();
-
+            binario = numero + binario;
+            
             return binario;
         }
 
@@ -46,12 +43,27 @@ namespace Ejercicio13
             }
 
             return numero;
-
-
-
-
-            return 0;
         }
+
+        public static bool ValidarBinario(string binario)
+        {
+            bool ok = true;
+            int numero  = -1;
+
+            for (int i = 0; i < binario.Length; i++)
+            {
+                numero = int.Parse(binario[i].ToString());
+
+                if(numero != 0 && numero != 1)
+                {
+                    ok = false;
+                    break;
+                }
+            }
+
+            return ok;
+        }
+
 
     }
 }

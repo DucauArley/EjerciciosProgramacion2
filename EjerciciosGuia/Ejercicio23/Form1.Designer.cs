@@ -105,6 +105,7 @@
             // 
             // textEuroEuro
             // 
+            this.textEuroEuro.Enabled = false;
             this.textEuroEuro.Location = new System.Drawing.Point(275, 50);
             this.textEuroEuro.Name = "textEuroEuro";
             this.textEuroEuro.Size = new System.Drawing.Size(100, 20);
@@ -113,6 +114,7 @@
             // 
             // textDolarEuro
             // 
+            this.textDolarEuro.Enabled = false;
             this.textDolarEuro.Location = new System.Drawing.Point(275, 76);
             this.textDolarEuro.Name = "textDolarEuro";
             this.textDolarEuro.Size = new System.Drawing.Size(100, 20);
@@ -120,6 +122,7 @@
             // 
             // textPesoEuro
             // 
+            this.textPesoEuro.Enabled = false;
             this.textPesoEuro.Location = new System.Drawing.Point(275, 101);
             this.textPesoEuro.Name = "textPesoEuro";
             this.textPesoEuro.Size = new System.Drawing.Size(100, 20);
@@ -127,6 +130,7 @@
             // 
             // textEuroDolar
             // 
+            this.textEuroDolar.Enabled = false;
             this.textEuroDolar.Location = new System.Drawing.Point(381, 50);
             this.textEuroDolar.Name = "textEuroDolar";
             this.textEuroDolar.Size = new System.Drawing.Size(100, 20);
@@ -134,6 +138,7 @@
             // 
             // textDolarDolar
             // 
+            this.textDolarDolar.Enabled = false;
             this.textDolarDolar.Location = new System.Drawing.Point(381, 75);
             this.textDolarDolar.Name = "textDolarDolar";
             this.textDolarDolar.Size = new System.Drawing.Size(100, 20);
@@ -141,6 +146,7 @@
             // 
             // textPesoDolar
             // 
+            this.textPesoDolar.Enabled = false;
             this.textPesoDolar.Location = new System.Drawing.Point(381, 101);
             this.textPesoDolar.Name = "textPesoDolar";
             this.textPesoDolar.Size = new System.Drawing.Size(100, 20);
@@ -148,6 +154,7 @@
             // 
             // textEuroPeso
             // 
+            this.textEuroPeso.Enabled = false;
             this.textEuroPeso.Location = new System.Drawing.Point(487, 50);
             this.textEuroPeso.Name = "textEuroPeso";
             this.textEuroPeso.Size = new System.Drawing.Size(100, 20);
@@ -155,6 +162,7 @@
             // 
             // textPesoPeso
             // 
+            this.textPesoPeso.Enabled = false;
             this.textPesoPeso.Location = new System.Drawing.Point(487, 101);
             this.textPesoPeso.Name = "textPesoPeso";
             this.textPesoPeso.Size = new System.Drawing.Size(100, 20);
@@ -162,6 +170,7 @@
             // 
             // textDolarPeso
             // 
+            this.textDolarPeso.Enabled = false;
             this.textDolarPeso.Location = new System.Drawing.Point(487, 76);
             this.textDolarPeso.Name = "textDolarPeso";
             this.textDolarPeso.Size = new System.Drawing.Size(100, 20);
