@@ -1,0 +1,7 @@
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio22\bin\Debug\Ejercicio22.exe.config
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio22\bin\Debug\Ejercicio22.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio22\bin\Debug\Ejercicio22.pdb
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio22\obj\Debug\Ejercicio22.csprojAssemblyReference.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio22\obj\Debug\Ejercicio22.csproj.CoreCompileInputs.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio22\obj\Debug\Ejercicio22.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio22\obj\Debug\Ejercicio22.pdb
