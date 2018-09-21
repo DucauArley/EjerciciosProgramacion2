@@ -1,0 +1,7 @@
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio29\bin\Debug\Ejercicio29.exe.config
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio29\bin\Debug\Ejercicio29.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio29\bin\Debug\Ejercicio29.pdb
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio29\obj\Debug\Ejercicio29.csprojAssemblyReference.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio29\obj\Debug\Ejercicio29.csproj.CoreCompileInputs.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio29\obj\Debug\Ejercicio29.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio29\obj\Debug\Ejercicio29.pdb

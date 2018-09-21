@@ -36,7 +36,7 @@ namespace Ejercicio29
 
         public float GetPromedioGoles()
         {
-            this.promedioGoles = totalGoles / partidosJugados;
+            this.promedioGoles = (float) totalGoles / partidosJugados;
 
             return this.promedioGoles;
         }
@@ -47,24 +47,32 @@ namespace Ejercicio29
             string info;
 
             retorno.AppendLine("Dni: " + this.dni);
-            retorno.AppendLine(" Nombre: " + this.nombre);
-            retorno.AppendLine(" Partidos jugados: " + this.partidosJugados);
-            retorno.AppendLine(" Goles totales: " + this.totalGoles);
-            retorno.AppendLine(" Promedio de goles: " + this.promedioGoles);
+            retorno.AppendLine("Nombre: " + this.nombre);
+            retorno.AppendLine("Partidos jugados: " + this.partidosJugados);
+            retorno.AppendLine("Goles totales: " + this.totalGoles);
+            retorno.AppendLine("Promedio de goles: " + GetPromedioGoles());
 
             info = retorno.ToString();
 
             return info;
         }
 
+        public static bool operator ==(Jugador j1, Jugador j2)
+        {
+            bool ok = false;
 
+            if(j1.dni == j2.dni)
+            {
+                ok = true;
+            }
 
+            return ok;
+        }
 
-
-
-
-
-
-
+        public static bool operator !=(Jugador j1, Jugador j2)
+        {
+            return !(j1 == j2);
+        }
+       
     }
 }
