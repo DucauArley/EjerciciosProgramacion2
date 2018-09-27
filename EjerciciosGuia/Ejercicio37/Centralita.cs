@@ -21,49 +21,125 @@ namespace Ejercicio37
             this.razonSocial = nombreEmpresa;
         }
 
+        public float GananciaPorLocal
+        {
+            get
+            {
+                return CalcularGanancia(Llamada.TipoLlamada.Local);
+            }
+        }
+
+        public float GananciaPorProvincia
+        {
+            get
+            {
+                return CalcularGanancia(Llamada.TipoLlamada.Provincial);
+            }
+        }
+
+        public float GananciaPorTotal
+        {
+            get
+            {
+                return CalcularGanancia(Llamada.TipoLlamada.Todas);
+            }
+        }
+
+        public List<Llamada> Llamadas
+        {
+            get
+            {
+                return this.listaDeLlamadas;
+            }
+
+        }
+
 
         private float CalcularGanancia(Llamada.TipoLlamada tipo)
         {
             float retorno = 0;
             float sumaNumero = 0;
 
-            for (int i = 0; i < listaDeLlamadas.Count; i++)
+            foreach (Llamada llamada in this.listaDeLlamadas)
             {
                 switch (tipo)
                 {
                     case Llamada.TipoLlamada.Local:
-                        sumaNumero = ((Local)listaDeLlamadas[i]).CostoLlamada;
-                        retorno = sumaNumero + retorno;
+                        if (llamada is Local)
+                        {
+                            sumaNumero = ((Local)llamada).CostoLlamada;
+                            retorno = sumaNumero + retorno;
+                        }
                         break;
                     case Llamada.TipoLlamada.Provincial:
-                        sumaNumero = ((Provincial)listaDeLlamadas[i]).CostoLlamada;
-                        retorno = sumaNumero + retorno;
+                        if (llamada is Provincial)
+                        {
+                            sumaNumero = ((Provincial)llamada).CostoLlamada;
+                            retorno = sumaNumero + retorno;
+                        }
                         break;
                     case Llamada.TipoLlamada.Todas:
-                        if(listaDeLlamadas[i] is Provincial)
+                        if (llamada is Provincial)
                         {
-                            sumaNumero = ((Provincial)listaDeLlamadas[i]).CostoLlamada;
+                            sumaNumero = ((Provincial)llamada).CostoLlamada;
                             retorno = sumaNumero + retorno;
                         }
                         else
                         {
-                            if(listaDeLlamadas[i] is Local)
+                            if (llamada is Local)
                             {
-                                sumaNumero = ((Local)listaDeLlamadas[i]).CostoLlamada;
+                                sumaNumero = ((Local)llamada).CostoLlamada;
                                 retorno = sumaNumero + retorno;
                             }
                         }
                         break;
                 }
-                 
             }
 
             return retorno;
         }
 
 
+        public string Mostrar()
+        {
+            string retorno;
+            StringBuilder str = new StringBuilder();
 
+            str.AppendLine("Razon social: " + this.razonSocial);
+            str.AppendLine("Ganancia total: " + GananciaPorTotal);
+            str.AppendLine("Ganancias por llamadas locales: " + GananciaPorLocal);
+            str.AppendLine("Ganancias por llamadas provinciales: " + GananciaPorProvincia);
 
+            for (int i = 0; i < this.listaDeLlamadas.Count; i++)
+            {
+                str.AppendLine("" + this.listaDeLlamadas[i].Mostrar());
+
+            }
+
+            retorno = str.ToString();
+
+            return retorno;
+        }
+
+        public void OrdenarLlamadas()
+        {
+            Llamada aux;
+            for (int i = 0; i < this.listaDeLlamadas.Count -1; i++)
+            {
+                for (int j = i + 1; j < this.listaDeLlamadas.Count; j++)
+                {
+                    if (Llamada.OrdenarPorDuracion(listaDeLlamadas[i], listaDeLlamadas[j]) == 1)
+                    {
+                        aux = listaDeLlamadas[i];
+                        listaDeLlamadas[i] = listaDeLlamadas[j];
+                        listaDeLlamadas[j] = aux;
+                    }
+                }
+            }
+            
+        }
+
+        
 
     }
 }

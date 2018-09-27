@@ -54,9 +54,8 @@ namespace Ejercicio37
 
             if(llamada1.duracion > llamada2.duracion)
             {
-                retorno = 1;//##############################
+                retorno = 1;
             }
-
 
             return retorno;
         }

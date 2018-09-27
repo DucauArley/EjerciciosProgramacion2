@@ -11,13 +11,13 @@ namespace Ejercicio37
         protected Franja franjaHoraria;
 
 
-        public Provincial(string origen, float duracion, string destino, Franja miFranja) : base(duracion, destino, origen)
+        public Provincial(string origen, Franja miFranja, float duracion, string destino) : base(duracion, destino, origen)
         {
             this.franjaHoraria = miFranja;
         }
 
 
-        public Provincial(Llamada llamada, Franja miFranja) : this(llamada.NumeroOrigen, llamada.Duracion, llamada.NumeroDestino, miFranja)
+        public Provincial(Franja miFranja, Llamada llamada) : this(llamada.NumeroOrigen, miFranja, llamada.Duracion, llamada.NumeroDestino)
         {
         }
 
@@ -78,9 +78,9 @@ namespace Ejercicio37
         
         public enum Franja
         {
-            Franja_1,
-            Franja_2,
-            Franja_3
+            Franja_1 = 0,
+            Franja_2 = 1,
+            Franja_3 = 2
         }
 
     }
