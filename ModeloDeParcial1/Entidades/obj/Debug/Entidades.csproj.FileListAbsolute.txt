@@ -1,0 +1,5 @@
+D:\VisualStudio\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\bin\Debug\Entidades.dll
+D:\VisualStudio\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\bin\Debug\Entidades.pdb
+D:\VisualStudio\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\VisualStudio\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\obj\Debug\Entidades.dll
+D:\VisualStudio\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\obj\Debug\Entidades.pdb
