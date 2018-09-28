@@ -43,21 +43,21 @@ namespace Entidades
         protected override bool ValidarDocumentacion(string doc)
         {
             bool ok = false;
-            int i = 0;
 
-            if (doc.ElementAt(2) == '-' && doc.ElementAt(7) == '-' && doc.Length == 9)
+            if (doc.Length == 9 && doc.ElementAt(2) == '-' && doc.ElementAt(7) == '-')
             {
                 ok = true;
-                doc.TrimStart('-', '-');
-                foreach(char numero in doc)
+                for (int i = 0; i < doc.Length; i++)
                 {
-                    if(!int.TryParse(numero.ToString(), out i))
+                    if (i != 2 && i != 7)
                     {
-                        ok = false;
+                        if (!char.IsNumber(doc[i]))
+                        {
+                            ok = false;
+                            break;
+                        }
                     }
-
                 }
-
             }
 
             return ok;

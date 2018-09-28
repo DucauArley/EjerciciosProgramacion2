@@ -28,397 +28,400 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.gpbDatosCurso = new System.Windows.Forms.GroupBox();
+            this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
+            this.txtApellidoProfe = new System.Windows.Forms.TextBox();
+            this.txtDocumentoProfe = new System.Windows.Forms.TextBox();
+            this.txtNombreProfe = new System.Windows.Forms.TextBox();
+            this.cmbDivisionCurso = new System.Windows.Forms.ComboBox();
+            this.nudAnioCurso = new System.Windows.Forms.NumericUpDown();
+            this.lblFechaIngreso = new System.Windows.Forms.Label();
+            this.lblDocumentoProfe = new System.Windows.Forms.Label();
+            this.lblApellidoProfe = new System.Windows.Forms.Label();
+            this.lblNombreProfe = new System.Windows.Forms.Label();
+            this.lblDivisionCurso = new System.Windows.Forms.Label();
+            this.lblAnioCurso = new System.Windows.Forms.Label();
+            this.btnMostrar = new System.Windows.Forms.Button();
+            this.btnCrearCurso = new System.Windows.Forms.Button();
+            this.cmbDivision = new System.Windows.Forms.ComboBox();
+            this.nudAnio = new System.Windows.Forms.NumericUpDown();
+            this.lblDivision = new System.Windows.Forms.Label();
+            this.lblAnio = new System.Windows.Forms.Label();
+            this.gpbDatosAlumno = new System.Windows.Forms.GroupBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtDocumento = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblDocumento = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.rtbDatos = new System.Windows.Forms.RichTextBox();
+            this.gpbDatosCurso.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAnioCurso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAnio)).BeginInit();
+            this.gpbDatosAlumno.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gpbDatosCurso
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(292, 285);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos Curso";
+            this.gpbDatosCurso.BackColor = System.Drawing.Color.Transparent;
+            this.gpbDatosCurso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.gpbDatosCurso.Controls.Add(this.dtpFechaIngreso);
+            this.gpbDatosCurso.Controls.Add(this.txtApellidoProfe);
+            this.gpbDatosCurso.Controls.Add(this.txtDocumentoProfe);
+            this.gpbDatosCurso.Controls.Add(this.txtNombreProfe);
+            this.gpbDatosCurso.Controls.Add(this.cmbDivisionCurso);
+            this.gpbDatosCurso.Controls.Add(this.nudAnioCurso);
+            this.gpbDatosCurso.Controls.Add(this.lblFechaIngreso);
+            this.gpbDatosCurso.Controls.Add(this.lblDocumentoProfe);
+            this.gpbDatosCurso.Controls.Add(this.lblApellidoProfe);
+            this.gpbDatosCurso.Controls.Add(this.lblNombreProfe);
+            this.gpbDatosCurso.Controls.Add(this.lblDivisionCurso);
+            this.gpbDatosCurso.Controls.Add(this.lblAnioCurso);
+            this.gpbDatosCurso.Controls.Add(this.btnMostrar);
+            this.gpbDatosCurso.Controls.Add(this.btnCrearCurso);
+            this.gpbDatosCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbDatosCurso.Location = new System.Drawing.Point(12, 12);
+            this.gpbDatosCurso.Name = "gpbDatosCurso";
+            this.gpbDatosCurso.Size = new System.Drawing.Size(292, 285);
+            this.gpbDatosCurso.TabIndex = 16;
+            this.gpbDatosCurso.TabStop = false;
+            this.gpbDatosCurso.Text = "Datos Curso";
             // 
-            // dateTimePicker1
+            // dtpFechaIngreso
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(82, 172);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker1.TabIndex = 29;
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(82, 172);
+            this.dtpFechaIngreso.Name = "dtpFechaIngreso";
+            this.dtpFechaIngreso.Size = new System.Drawing.Size(200, 23);
+            this.dtpFechaIngreso.TabIndex = 29;
             // 
-            // textBox3
+            // txtApellidoProfe
             // 
-            this.textBox3.Location = new System.Drawing.Point(82, 111);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 23);
-            this.textBox3.TabIndex = 28;
+            this.txtApellidoProfe.Location = new System.Drawing.Point(82, 111);
+            this.txtApellidoProfe.Name = "txtApellidoProfe";
+            this.txtApellidoProfe.Size = new System.Drawing.Size(200, 23);
+            this.txtApellidoProfe.TabIndex = 28;
             // 
-            // textBox2
+            // txtDocumentoProfe
             // 
-            this.textBox2.Location = new System.Drawing.Point(82, 142);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 23);
-            this.textBox2.TabIndex = 27;
+            this.txtDocumentoProfe.Location = new System.Drawing.Point(82, 142);
+            this.txtDocumentoProfe.Name = "txtDocumentoProfe";
+            this.txtDocumentoProfe.Size = new System.Drawing.Size(200, 23);
+            this.txtDocumentoProfe.TabIndex = 27;
             // 
-            // textBox1
+            // txtNombreProfe
             // 
-            this.textBox1.Location = new System.Drawing.Point(82, 80);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 23);
-            this.textBox1.TabIndex = 26;
+            this.txtNombreProfe.Location = new System.Drawing.Point(82, 80);
+            this.txtNombreProfe.Name = "txtNombreProfe";
+            this.txtNombreProfe.Size = new System.Drawing.Size(200, 23);
+            this.txtNombreProfe.TabIndex = 26;
             // 
-            // comboBox1
+            // cmbDivisionCurso
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbDivisionCurso.FormattingEnabled = true;
+            this.cmbDivisionCurso.Items.AddRange(new object[] {
             "A",
             "B",
             "C",
             "D",
             "E"});
-            this.comboBox1.Location = new System.Drawing.Point(82, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 25;
+            this.cmbDivisionCurso.Location = new System.Drawing.Point(82, 53);
+            this.cmbDivisionCurso.Name = "cmbDivisionCurso";
+            this.cmbDivisionCurso.Size = new System.Drawing.Size(121, 24);
+            this.cmbDivisionCurso.TabIndex = 25;
             // 
-            // numericUpDown1
+            // nudAnioCurso
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(82, 22);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.nudAnioCurso.Location = new System.Drawing.Point(82, 22);
+            this.nudAnioCurso.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 23);
-            this.numericUpDown1.TabIndex = 24;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.nudAnioCurso.Name = "nudAnioCurso";
+            this.nudAnioCurso.Size = new System.Drawing.Size(120, 23);
+            this.nudAnioCurso.TabIndex = 24;
+            this.nudAnioCurso.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // label7
+            // lblFechaIngreso
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(10, 172);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 17);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Ingreso";
+            this.lblFechaIngreso.AutoSize = true;
+            this.lblFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaIngreso.Location = new System.Drawing.Point(10, 172);
+            this.lblFechaIngreso.Name = "lblFechaIngreso";
+            this.lblFechaIngreso.Size = new System.Drawing.Size(55, 17);
+            this.lblFechaIngreso.TabIndex = 23;
+            this.lblFechaIngreso.Text = "Ingreso";
             // 
-            // label6
+            // lblDocumentoProfe
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(10, 142);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 17);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "DNI";
+            this.lblDocumentoProfe.AutoSize = true;
+            this.lblDocumentoProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDocumentoProfe.Location = new System.Drawing.Point(10, 142);
+            this.lblDocumentoProfe.Name = "lblDocumentoProfe";
+            this.lblDocumentoProfe.Size = new System.Drawing.Size(31, 17);
+            this.lblDocumentoProfe.TabIndex = 22;
+            this.lblDocumentoProfe.Text = "DNI";
             // 
-            // label5
+            // lblApellidoProfe
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(10, 114);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 17);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Apellido";
+            this.lblApellidoProfe.AutoSize = true;
+            this.lblApellidoProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellidoProfe.Location = new System.Drawing.Point(10, 114);
+            this.lblApellidoProfe.Name = "lblApellidoProfe";
+            this.lblApellidoProfe.Size = new System.Drawing.Size(58, 17);
+            this.lblApellidoProfe.TabIndex = 21;
+            this.lblApellidoProfe.Text = "Apellido";
             // 
-            // label4
+            // lblNombreProfe
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(10, 84);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 17);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Nombre";
+            this.lblNombreProfe.AutoSize = true;
+            this.lblNombreProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreProfe.Location = new System.Drawing.Point(10, 84);
+            this.lblNombreProfe.Name = "lblNombreProfe";
+            this.lblNombreProfe.Size = new System.Drawing.Size(58, 17);
+            this.lblNombreProfe.TabIndex = 20;
+            this.lblNombreProfe.Text = "Nombre";
             // 
-            // label3
+            // lblDivisionCurso
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(10, 57);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 17);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Division";
+            this.lblDivisionCurso.AutoSize = true;
+            this.lblDivisionCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDivisionCurso.Location = new System.Drawing.Point(10, 57);
+            this.lblDivisionCurso.Name = "lblDivisionCurso";
+            this.lblDivisionCurso.Size = new System.Drawing.Size(57, 17);
+            this.lblDivisionCurso.TabIndex = 19;
+            this.lblDivisionCurso.Text = "Division";
             // 
-            // label2
+            // lblAnioCurso
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 17);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Año";
+            this.lblAnioCurso.AutoSize = true;
+            this.lblAnioCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnioCurso.Location = new System.Drawing.Point(10, 25);
+            this.lblAnioCurso.Name = "lblAnioCurso";
+            this.lblAnioCurso.Size = new System.Drawing.Size(33, 17);
+            this.lblAnioCurso.TabIndex = 18;
+            this.lblAnioCurso.Text = "Año";
             // 
-            // button2
+            // btnMostrar
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(150, 215);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 47);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Mostrar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrar.Location = new System.Drawing.Point(150, 215);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(100, 47);
+            this.btnMostrar.TabIndex = 17;
+            this.btnMostrar.Text = "Mostrar";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
-            // button1
+            // btnCrearCurso
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(10, 215);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 47);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Crear Curso";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCrearCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearCurso.Location = new System.Drawing.Point(10, 215);
+            this.btnCrearCurso.Name = "btnCrearCurso";
+            this.btnCrearCurso.Size = new System.Drawing.Size(103, 47);
+            this.btnCrearCurso.TabIndex = 16;
+            this.btnCrearCurso.Text = "Crear Curso";
+            this.btnCrearCurso.UseVisualStyleBackColor = true;
+            this.btnCrearCurso.Click += new System.EventHandler(this.btnCrearCurso_Click);
             // 
-            // comboBox2
+            // cmbDivision
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbDivision.FormattingEnabled = true;
+            this.cmbDivision.Items.AddRange(new object[] {
             "A",
             "B",
             "C",
             "D",
             "E"});
-            this.comboBox2.Location = new System.Drawing.Point(83, 151);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 34;
+            this.cmbDivision.Location = new System.Drawing.Point(83, 151);
+            this.cmbDivision.Name = "cmbDivision";
+            this.cmbDivision.Size = new System.Drawing.Size(121, 24);
+            this.cmbDivision.TabIndex = 34;
             // 
-            // numericUpDown2
+            // nudAnio
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(83, 120);
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.nudAnio.Location = new System.Drawing.Point(83, 120);
+            this.nudAnio.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 23);
-            this.numericUpDown2.TabIndex = 33;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.nudAnio.Name = "nudAnio";
+            this.nudAnio.Size = new System.Drawing.Size(120, 23);
+            this.nudAnio.TabIndex = 33;
+            this.nudAnio.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // label11
+            // lblDivision
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(11, 155);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 17);
-            this.label11.TabIndex = 32;
-            this.label11.Text = "Division";
+            this.lblDivision.AutoSize = true;
+            this.lblDivision.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDivision.Location = new System.Drawing.Point(11, 155);
+            this.lblDivision.Name = "lblDivision";
+            this.lblDivision.Size = new System.Drawing.Size(57, 17);
+            this.lblDivision.TabIndex = 32;
+            this.lblDivision.Text = "Division";
             // 
-            // label12
+            // lblAnio
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(11, 123);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(33, 17);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "Año";
+            this.lblAnio.AutoSize = true;
+            this.lblAnio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnio.Location = new System.Drawing.Point(11, 123);
+            this.lblAnio.Name = "lblAnio";
+            this.lblAnio.Size = new System.Drawing.Size(33, 17);
+            this.lblAnio.TabIndex = 31;
+            this.lblAnio.Text = "Año";
             // 
-            // groupBox2
+            // gpbDatosAlumno
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.numericUpDown2);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(356, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(292, 285);
-            this.groupBox2.TabIndex = 30;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Datos Alumno";
+            this.gpbDatosAlumno.BackColor = System.Drawing.Color.Transparent;
+            this.gpbDatosAlumno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.gpbDatosAlumno.Controls.Add(this.cmbDivision);
+            this.gpbDatosAlumno.Controls.Add(this.txtApellido);
+            this.gpbDatosAlumno.Controls.Add(this.txtDocumento);
+            this.gpbDatosAlumno.Controls.Add(this.nudAnio);
+            this.gpbDatosAlumno.Controls.Add(this.txtNombre);
+            this.gpbDatosAlumno.Controls.Add(this.lblDivision);
+            this.gpbDatosAlumno.Controls.Add(this.lblDocumento);
+            this.gpbDatosAlumno.Controls.Add(this.lblAnio);
+            this.gpbDatosAlumno.Controls.Add(this.lblApellido);
+            this.gpbDatosAlumno.Controls.Add(this.lblNombre);
+            this.gpbDatosAlumno.Controls.Add(this.btnAgregar);
+            this.gpbDatosAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbDatosAlumno.Location = new System.Drawing.Point(356, 12);
+            this.gpbDatosAlumno.Name = "gpbDatosAlumno";
+            this.gpbDatosAlumno.Size = new System.Drawing.Size(292, 285);
+            this.gpbDatosAlumno.TabIndex = 30;
+            this.gpbDatosAlumno.TabStop = false;
+            this.gpbDatosAlumno.Text = "Datos Alumno";
             // 
-            // textBox4
+            // txtApellido
             // 
-            this.textBox4.Location = new System.Drawing.Point(82, 61);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 23);
-            this.textBox4.TabIndex = 35;
+            this.txtApellido.Location = new System.Drawing.Point(82, 61);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(200, 23);
+            this.txtApellido.TabIndex = 35;
             // 
-            // textBox5
+            // txtDocumento
             // 
-            this.textBox5.Location = new System.Drawing.Point(82, 92);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 23);
-            this.textBox5.TabIndex = 34;
+            this.txtDocumento.Location = new System.Drawing.Point(82, 92);
+            this.txtDocumento.Name = "txtDocumento";
+            this.txtDocumento.Size = new System.Drawing.Size(200, 23);
+            this.txtDocumento.TabIndex = 34;
             // 
-            // textBox6
+            // txtNombre
             // 
-            this.textBox6.Location = new System.Drawing.Point(82, 30);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 23);
-            this.textBox6.TabIndex = 33;
+            this.txtNombre.Location = new System.Drawing.Point(82, 30);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(200, 23);
+            this.txtNombre.TabIndex = 33;
             // 
-            // label8
+            // lblDocumento
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(10, 92);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(31, 17);
-            this.label8.TabIndex = 32;
-            this.label8.Text = "DNI";
+            this.lblDocumento.AutoSize = true;
+            this.lblDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDocumento.Location = new System.Drawing.Point(10, 92);
+            this.lblDocumento.Name = "lblDocumento";
+            this.lblDocumento.Size = new System.Drawing.Size(51, 17);
+            this.lblDocumento.TabIndex = 32;
+            this.lblDocumento.Text = "Legajo";
             // 
-            // label9
+            // lblApellido
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(10, 64);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 17);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "Apellido";
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.Location = new System.Drawing.Point(10, 64);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(58, 17);
+            this.lblApellido.TabIndex = 31;
+            this.lblApellido.Text = "Apellido";
             // 
-            // label10
+            // lblNombre
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(10, 34);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 17);
-            this.label10.TabIndex = 30;
-            this.label10.Text = "Nombre";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(10, 34);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(58, 17);
+            this.lblNombre.TabIndex = 30;
+            this.lblNombre.Text = "Nombre";
             // 
-            // button3
+            // btnAgregar
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(155, 201);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 47);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Agregar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(155, 201);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(100, 47);
+            this.btnAgregar.TabIndex = 17;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // richTextBox1
+            // rtbDatos
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 303);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(636, 192);
-            this.richTextBox1.TabIndex = 31;
-            this.richTextBox1.Text = "";
+            this.rtbDatos.Location = new System.Drawing.Point(12, 303);
+            this.rtbDatos.Name = "rtbDatos";
+            this.rtbDatos.Size = new System.Drawing.Size(636, 192);
+            this.rtbDatos.TabIndex = 31;
+            this.rtbDatos.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 498);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.rtbDatos);
+            this.Controls.Add(this.gpbDatosAlumno);
+            this.Controls.Add(this.gpbDatosCurso);
             this.Name = "Form1";
             this.Text = "Vista del curso";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gpbDatosCurso.ResumeLayout(false);
+            this.gpbDatosCurso.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAnioCurso)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAnio)).EndInit();
+            this.gpbDatosAlumno.ResumeLayout(false);
+            this.gpbDatosAlumno.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.GroupBox gpbDatosCurso;
+        private System.Windows.Forms.ComboBox cmbDivision;
+        private System.Windows.Forms.DateTimePicker dtpFechaIngreso;
+        private System.Windows.Forms.NumericUpDown nudAnio;
+        private System.Windows.Forms.Label lblDivision;
+        private System.Windows.Forms.TextBox txtApellidoProfe;
+        private System.Windows.Forms.Label lblAnio;
+        private System.Windows.Forms.TextBox txtDocumentoProfe;
+        private System.Windows.Forms.TextBox txtNombreProfe;
+        private System.Windows.Forms.ComboBox cmbDivisionCurso;
+        private System.Windows.Forms.NumericUpDown nudAnioCurso;
+        private System.Windows.Forms.Label lblFechaIngreso;
+        private System.Windows.Forms.Label lblDocumentoProfe;
+        private System.Windows.Forms.Label lblApellidoProfe;
+        private System.Windows.Forms.Label lblNombreProfe;
+        private System.Windows.Forms.Label lblDivisionCurso;
+        private System.Windows.Forms.Label lblAnioCurso;
+        private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.Button btnCrearCurso;
+        private System.Windows.Forms.GroupBox gpbDatosAlumno;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtDocumento;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblDocumento;
+        private System.Windows.Forms.Label lblApellido;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.RichTextBox rtbDatos;
     }
 }
 

@@ -3,3 +3,9 @@ D:\VisualStudio\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\bin\Debug\Ent
 D:\VisualStudio\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 D:\VisualStudio\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\obj\Debug\Entidades.dll
 D:\VisualStudio\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\obj\Debug\Entidades.pdb
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\bin\Debug\Entidades.dll
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\bin\Debug\Entidades.pdb
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\obj\Debug\Entidades.dll
+C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\ModeloDeParcial1\Entidades\obj\Debug\Entidades.pdb
