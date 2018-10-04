@@ -31,7 +31,7 @@ namespace VistaForm
             curso = new Curso(short.Parse(nudAnioCurso.Text), division, new Profesor(txtNombreProfe.Text, txtApellidoProfe.Text, txtDocumentoProfe.Text, DateTime.Parse(dtpFechaIngreso.Text)));
 
             //MessageBox.Show("No se pudo crear el curso");
-
+            //cambiar esto
         }
 
         private void btnMostrar_Click(object sender, EventArgs e)
