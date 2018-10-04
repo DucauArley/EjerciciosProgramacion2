@@ -37,7 +37,8 @@ namespace Test
             financiera.OrdenarPrestamos();
             Console.WriteLine("\n ********************ORDENADOS POR FECHA**************************");
             Console.WriteLine(Financiera.Mostrar(financiera));
-            Console.ReadKey();
+            Console.ReadKey();
+
         }
     }
 }
