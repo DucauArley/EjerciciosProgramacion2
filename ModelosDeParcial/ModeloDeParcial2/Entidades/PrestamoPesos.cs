@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrestamosPersonales
 {
-    class PrestamoPesos :Prestamo
+    public class PrestamoPesos :Prestamo
     {
         private float porcentajeInteres;
 
@@ -42,7 +42,7 @@ namespace PrestamosPersonales
             StringBuilder str = new StringBuilder();
             string retorno;
 
-            str.AppendLine(base.Mostrar());
+            str.Append(base.Mostrar());
             str.AppendFormat("Intereses: {0}\n", this.Interes);
 
             retorno = str.ToString();
