@@ -145,7 +145,6 @@ namespace EntidadFinanciera
                 ok = true;
             }
 
-
             return ok;
         }
 

@@ -29,7 +29,7 @@ namespace PrestamosPersonales
         public Prestamo(float monto, DateTime vencimiento)
         {
             this.monto = monto;
-            this.vencimiento = Vencimiento;
+            Vencimiento = vencimiento;
         }
 
         public float Monto

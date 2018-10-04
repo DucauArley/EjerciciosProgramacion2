@@ -58,7 +58,6 @@ namespace PrestamosPersonales
 
             this.Vencimiento = nuevoVencimiento;
         }
-
-
+        
     }
 }
