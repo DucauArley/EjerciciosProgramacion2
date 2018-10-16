@@ -10,21 +10,27 @@ namespace Ejercicio42
     {
         static void Main(string[] args)
         {
-            
-        }
-
-        public static void MetodoExcepcion()
-        {
             try
             {
-
+                OtraClase aux = new OtraClase();
+                aux.MiMetodoInstancia();
             }
-            catch(DivideByZeroException e)
+            catch (MiExcepcion e)
             {
+                Console.WriteLine(e.Message);
 
+                if (!object.ReferenceEquals(e.InnerException, null))
+                {
+                    Exception ex = e.InnerException;
+                    do
+                    {
+                        Console.WriteLine(ex.Message);
+                        ex = ex.InnerException;
+                    } while (!object.ReferenceEquals(ex, null));
+                }
             }
 
-
+            Console.ReadKey();
         }
     }
 }
