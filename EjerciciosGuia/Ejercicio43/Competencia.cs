@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio36
+namespace Ejercicio43
 {
     class Competencia
     {
@@ -50,7 +50,7 @@ namespace Ejercicio36
                 this.cantidadVueltas = value;
             }
         }
-        
+
         public VehiculoDeCarrera this[int i]
         {
             get
@@ -103,6 +103,11 @@ namespace Ejercicio36
                 }
             }
 
+            if(ok == false)
+            {
+                throw new CompetenciaNoDisponibleExcepcion("El vehiculo no corresponde a la competencia", c.GetType().Name, "Sobrecarga de ==");
+            }
+
             return ok;
         }
 
@@ -115,34 +120,46 @@ namespace Ejercicio36
         {
             bool ok = false;
             Random ran = new Random();
-
             
-
             if (c != v && c.competidores.Count < c.cantidadCompetidores)
             {
 
                 switch (c.tipo)
                 {
                     case TipoCompetencia.F1:
-                        if(v is AutoF1)
+                        try
                         {
-                            v.EnCompetencia = true;
-                            v.VueltasRestantes = c.cantidadVueltas;
-                            v.CantidadCombustible = (short)ran.Next(15, 100);
-                            c.competidores.Add(v);
+                            if (v is AutoF1)
+                            {
+                                v.EnCompetencia = true;
+                                v.VueltasRestantes = c.cantidadVueltas;
+                                v.CantidadCombustible = (short)ran.Next(15, 100);
+                                c.competidores.Add(v);
+                            }
+                        }
+                        catch (CompetenciaNoDisponibleExcepcion e)
+                        {
+                            throw new CompetenciaNoDisponibleExcepcion("Competencia Incorrecta", c.GetType().Name, "Operator +", e);
                         }
                         break;
                     case TipoCompetencia.MotoCross:
-                        if(v is MotoCross)
+                        try
                         {
-                            v.EnCompetencia = true;
-                            v.VueltasRestantes = c.cantidadVueltas;
-                            v.CantidadCombustible = (short)ran.Next(15, 100);
-                            c.competidores.Add(v);
+                            if (v is MotoCross)
+                            {
+                                v.EnCompetencia = true;
+                                v.VueltasRestantes = c.cantidadVueltas;
+                                v.CantidadCombustible = (short)ran.Next(15, 100);
+                                c.competidores.Add(v);
+                            }
+                        }
+                        catch (CompetenciaNoDisponibleExcepcion e)
+                        {
+                            throw new CompetenciaNoDisponibleExcepcion("Competencia Incorrecta", c.GetType().Name, "Operator +", e);
                         }
                         break;
                 }
-                
+
                 ok = true;
             }
 
@@ -167,6 +184,5 @@ namespace Ejercicio36
             F1,
             MotoCross
         }
-
     }
 }
