@@ -16,7 +16,6 @@ namespace Ejercicio43
             AutoF1 a3 = new AutoF1(3, "RedBull");
             MotoCross m1 = new MotoCross(4, "escuderia");
 
-            Console.ReadKey();
 
             try
             {

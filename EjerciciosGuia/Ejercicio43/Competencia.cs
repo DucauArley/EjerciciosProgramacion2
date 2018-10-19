@@ -94,16 +94,12 @@ namespace Ejercicio43
         {
             bool ok = false;
 
-            for (int i = 0; i < c.competidores.Count; i++)
+            if (c.competidores.Contains(v))
             {
-                if (v == c.competidores.ElementAt(i))
-                {
-                    ok = true;
-                    break;
-                }
+                ok = true;
             }
-
-            if(ok == false)
+            
+            if (ok == false)
             {
                 throw new CompetenciaNoDisponibleExcepcion("El vehiculo no corresponde a la competencia", c.GetType().Name, "Sobrecarga de ==");
             }
@@ -131,6 +127,7 @@ namespace Ejercicio43
                         {
                             if (v is AutoF1)
                             {
+                                ok = true;
                                 v.EnCompetencia = true;
                                 v.VueltasRestantes = c.cantidadVueltas;
                                 v.CantidadCombustible = (short)ran.Next(15, 100);
@@ -147,6 +144,7 @@ namespace Ejercicio43
                         {
                             if (v is MotoCross)
                             {
+                                ok = true;
                                 v.EnCompetencia = true;
                                 v.VueltasRestantes = c.cantidadVueltas;
                                 v.CantidadCombustible = (short)ran.Next(15, 100);
@@ -159,8 +157,6 @@ namespace Ejercicio43
                         }
                         break;
                 }
-
-                ok = true;
             }
 
             return ok;
