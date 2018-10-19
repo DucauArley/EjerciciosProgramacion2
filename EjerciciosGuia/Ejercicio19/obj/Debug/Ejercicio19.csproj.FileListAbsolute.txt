@@ -5,3 +5,10 @@ C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio19\o
 C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio19\obj\Debug\Ejercicio19.csproj.CoreCompileInputs.cache
 C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio19\obj\Debug\Ejercicio19.exe
 C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio19\obj\Debug\Ejercicio19.pdb
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio19\bin\Debug\Ejercicio19.exe.config
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio19\bin\Debug\Ejercicio19.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio19\bin\Debug\Ejercicio19.pdb
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio19\obj\Debug\Ejercicio19.csprojAssemblyReference.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio19\obj\Debug\Ejercicio19.csproj.CoreCompileInputs.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio19\obj\Debug\Ejercicio19.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio19\obj\Debug\Ejercicio19.pdb

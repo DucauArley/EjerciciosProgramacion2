@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio41
 {
-    class Centralita
+    public class Centralita
     {
         private List<Llamada> listaDeLlamadas;
         protected string razonSocial;

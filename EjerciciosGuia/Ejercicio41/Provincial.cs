@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio41
 {
-    class Provincial:Llamada
+    public class Provincial:Llamada
     {
         protected Franja franjaHoraria;
 

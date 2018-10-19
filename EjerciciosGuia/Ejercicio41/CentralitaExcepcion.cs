@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio41
 {
-    class CentralitaExcepcion: Exception
+    public class CentralitaExcepcion: Exception
     {
         private string nombreClase;
         private string nombreMetodo;

@@ -82,9 +82,12 @@ namespace Ejercicio40
 
         public static bool operator ==(Llamada l1, Llamada l2)
         {
-            bool ok;
+            bool ok = false;
 
-            ok = l1.Equals(l2);
+            if (l1.Equals(l2) && l1.NumeroDestino == l2.NumeroDestino && l1.NumeroOrigen == l2.NumeroOrigen)
+            {
+                ok = true;
+            }
 
             return ok;
         }

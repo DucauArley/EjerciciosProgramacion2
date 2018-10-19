@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio42
 {
-    class MiClaseErrores
+    public class MiClaseErrores
     {
         public MiClaseErrores()
         {

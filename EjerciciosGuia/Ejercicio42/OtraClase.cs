@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio42
 {
-    class OtraClase
+    public class OtraClase
     {
         public void MiMetodoInstancia()
         {

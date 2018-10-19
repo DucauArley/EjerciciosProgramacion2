@@ -5,3 +5,10 @@ C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio18\o
 C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio18\obj\Debug\Ejercicio18.csproj.CoreCompileInputs.cache
 C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio18\obj\Debug\Ejercicio18.exe
 C:\Users\ArleyZohan\Desktop\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio18\obj\Debug\Ejercicio18.pdb
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio18\bin\Debug\Ejercicio18.exe.config
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio18\bin\Debug\Ejercicio18.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio18\bin\Debug\Ejercicio18.pdb
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio18\obj\Debug\Ejercicio18.csprojAssemblyReference.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio18\obj\Debug\Ejercicio18.csproj.CoreCompileInputs.cache
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio18\obj\Debug\Ejercicio18.exe
+D:\VisualStudio\EjerciciosProgramacion2\EjerciciosGuia\Ejercicio18\obj\Debug\Ejercicio18.pdb
