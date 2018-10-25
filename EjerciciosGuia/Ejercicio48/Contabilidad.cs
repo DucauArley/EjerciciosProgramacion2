@@ -22,8 +22,8 @@ namespace Ejercicio48
         public static Contabilidad<T, U> operator +(Contabilidad<T, U> c, T egreso)
         {
             c.egresos.Add(egreso);
-            
-            return c
+
+            return c;
         }
 
         public static Contabilidad<T, U> operator +(Contabilidad<T, U> c, U ingreso)
