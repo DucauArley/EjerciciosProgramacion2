@@ -42,11 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArchivoTexto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ejercicio42\Ejercicio42.csproj">
+      <Project>{28d5a93f-ebc8-40ac-be8b-b25983809865}</Project>
+      <Name>Ejercicio42</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ejercicio45\Ejercicio45.csproj">
+      <Project>{c79dafef-0bbc-4e4a-9db7-0bfad409159b}</Project>
+      <Name>Ejercicio45</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
