@@ -13,11 +13,24 @@ namespace Ejercicio57
             Persona p = new Persona("Arley", "Ducau");
             Persona p2;
 
-            Persona.Guardar(p);
+            try
+            {
+                Persona.Guardar(p);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Excepciones en guardar");
+            }
 
-            p2 = Persona.Leer("Persona.xml");
-
-            Console.WriteLine(p2.ToString());
+            try
+            {
+                p2 = Persona.Leer("Persona.bin");
+                Console.WriteLine(p2.ToString());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Excepciones en leer");
+            }
 
             Console.ReadLine();
         }

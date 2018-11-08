@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml;
-using System.Xml.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 namespace Ejercicio57
 {
@@ -26,46 +26,52 @@ namespace Ejercicio57
 
         public static bool Guardar(Persona p)
         {
-            XmlSerializer ser = new XmlSerializer(typeof(Persona));
-            XmlTextWriter texto = null;
+            FileStream archivo = null;
+            BinaryFormatter ser = new BinaryFormatter();
             bool ok = true;
 
             try
             {
-                texto = new XmlTextWriter("Persona.xml", null);
-                ser.Serialize(texto, p);
+                archivo = new FileStream("Persona.bin", FileMode.Create);
+                ser.Serialize(archivo, p);
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 ok = false;
+                throw e;
             }
             finally
             {
-                texto.Close();
+                if (!object.ReferenceEquals(archivo, null))
+                {
+                    archivo.Close();
+                }
             }
-            
-            return ok;
 
+            return ok;
         }
 
         public static Persona Leer(string ruta)
         {
-            XmlSerializer ser = new XmlSerializer(typeof(Persona));
-            XmlTextReader texto = null;
             Persona retorno;
+            BinaryFormatter ser = new BinaryFormatter();
+            FileStream archivo = null;
 
             try
             {
-                texto = new XmlTextReader(ruta);
-                retorno = (Persona)ser.Deserialize(texto);
+                archivo = new FileStream("Persona.bin", FileMode.Open);
+                retorno = (Persona)ser.Deserialize(archivo);
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                retorno = null;
+                throw e;
             }
             finally
             {
-                texto.Close();
+                if (!object.ReferenceEquals(archivo, null))
+                {
+                    archivo.Close();
+                }
             }
 
             return retorno;

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Serialization;
 
-namespace Ejercicio55
+namespace Ejercicio59
 {
     class Provincial:Llamada, IGuardar<string>
     {
@@ -110,12 +112,63 @@ namespace Ejercicio55
 
         public bool Guardar()
         {
-            throw new NotImplementedException();
+            XmlSerializer ser = new XmlSerializer(typeof(Llamada));
+            XmlTextWriter str = null;
+            bool ok = true;
+
+            try
+            {
+                str = new XmlTextWriter("Provincial.xml", null);
+                ser.Serialize(str, this);
+            }
+            catch (Exception e)
+            {
+                ok = false;
+                throw e;
+            }
+            finally
+            {
+                str.Close();
+            }
+
+            return ok;
         }
 
         public string Leer()
         {
-            throw new NotImplementedException();
+            XmlSerializer ser = new XmlSerializer(typeof(Llamada));
+            XmlTextReader str = null;
+            Llamada llamada = null;
+            string retorno = "";
+
+            try
+            {
+                str = new XmlTextReader("Local.xml");
+                llamada = (Llamada)ser.Deserialize(str);
+
+                if (llamada is Local)
+                {
+                    retorno = llamada.ToString();
+                }
+                else
+                {
+                    throw new InvalidCastException();
+                }
+            }
+            catch (InvalidCastException e)
+            {
+                throw e;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                str.Close();
+            }
+
+            return retorno;
         }
 
 
@@ -125,5 +178,6 @@ namespace Ejercicio55
             Franja_2 = 1,
             Franja_3 = 2
         }
+
     }
 }
