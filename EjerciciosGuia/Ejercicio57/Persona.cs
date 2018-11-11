@@ -10,8 +10,8 @@ namespace Ejercicio57
 {
     public class Persona
     {
-        private string nombre;
-        private string apellido;
+        public string nombre;
+        public string apellido;
 
         public Persona()
         {

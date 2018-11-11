@@ -57,8 +57,8 @@ namespace Ejercicio60
             {
                 retorno = "No se pudo conectar: " + ex.ToString();
             }
-            return retorno;
-            
+
+            return retorno;          
         }
 
         public string Modificar(string nombre, string nuevoNombre)
