@@ -12,6 +12,8 @@ namespace Ejercicio61
 {
     public partial class Form1 : Form
     {
+        private List<Persona> listaPersonas;
+
         public Form1()
         {
             InitializeComponent();
@@ -26,7 +28,33 @@ namespace Ejercicio61
 
         private void btnLeer_Click(object sender, EventArgs e)
         {
-            List<Persona> listaPersonas = PersonaDAO.Leer();
+            listaPersonas = PersonaDAO.Leer();
+
+            lstPersonas.Text = listaPersonas.ToString();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            int indice = lstPersonas.SelectedIndex;
+
+            Persona p = listaPersonas[indice];
+
+            PersonaDAO.Modificar(p.ID, txtNombre.Text, txtApellido.Text);
+
+            listaPersonas.Insert(indice, p);
+
+            lstPersonas.Text = listaPersonas.ToString();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int indice = lstPersonas.SelectedIndex;
+
+            Persona p = listaPersonas[indice];
+
+            PersonaDAO.Borrar(p.ID);
+
+            listaPersonas.Remove(p);
 
             lstPersonas.Text = listaPersonas.ToString();
         }
