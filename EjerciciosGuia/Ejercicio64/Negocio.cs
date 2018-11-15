@@ -17,6 +17,7 @@ namespace Ejercicio64
         {
             this.caja1 = c1;
             this.caja2 = c2;
+            this.clientes = new List<string>();
         }
 
         public Caja Caja1

@@ -18,7 +18,7 @@ namespace Ejercicio60
         {
             try
             {
-                this.conexion = new SqlCommand("Data Source=LAB3PC14\SQLEXPRESS;Initial Catalog=AdventureWorks2012;Integrated Security=True");
+                this.conexion = new SqlConnection(@"Data Source=LAB3PC14\SQLEXPRESS;Initial Catalog=AdventureWorks2012;Integrated Security=True");
                 conexion.Open();
                 MessageBox.Show("Se conecto al sql");
             }
@@ -48,6 +48,7 @@ namespace Ejercicio60
         public string Eliminar(string nombre)
         {
             string retorno = "Se pudo eliminar correctamente";
+            
             try
             {
                 comando = new SqlCommand("DELETE FROM Production.Location WHERE Name = '" + nombre + "'", conexion);
@@ -64,6 +65,7 @@ namespace Ejercicio60
         public string Modificar(string nombre, string nuevoNombre)
         {
             string retorno = "Se modifico correctamente";
+
             try
             {
                 comando = new SqlCommand("UPDATE Production.Location SET Name = '" + nuevoNombre + "' WHERE Name = '" + nombre + "'", conexion);
@@ -85,10 +87,12 @@ namespace Ejercicio60
             {
                 comando = new SqlCommand("SELECT * FROM Production.Location WHERE Name = '" + nombre + "'", conexion);
                 data = comando.ExecuteReader();
+
                 while (data.Read())
                 {
                     contador++;
                 }
+                
                 data.Close();
             }
             catch (Exception ex)
