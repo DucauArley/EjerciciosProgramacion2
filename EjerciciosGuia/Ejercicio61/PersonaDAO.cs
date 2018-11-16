@@ -15,7 +15,7 @@ namespace Ejercicio61
         private static SqlConnection conexion;
         private static SqlCommand comando;
 
-        public PersonaDAO()
+        static PersonaDAO()
         {
             conexion = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=Ejercicio61;Integrated Security=True");
         }
