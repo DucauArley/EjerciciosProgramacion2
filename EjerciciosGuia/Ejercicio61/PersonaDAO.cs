@@ -17,8 +17,7 @@ namespace Ejercicio61
 
         public PersonaDAO()
         {
-            conexion = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=AdventureWorks2012;Integrated Security=True");
-            conexion.Open();
+            conexion = new SqlConnection(@"Data Source= .\SQLEXPRESS;Initial Catalog= Ejercicio61;Integrated Security=True");
         }
 
         public static bool Guardar(Persona persona)
@@ -28,7 +27,7 @@ namespace Ejercicio61
             try
             {
                 conexion.Open();
-                comando = new SqlCommand("INSERT INTO Persona (Nombre, Apellido) VALUES ('" + persona.Nombre + "','" + persona.Apellido + "')", conexion);
+                comando = new SqlCommand("INSERT INTO dbo.Persona (Nombre, Apellido) VALUES ('" + persona.Nombre + "','" + persona.Apellido + "')", conexion);
                 comando.ExecuteNonQuery();
             }
             catch (Exception)
@@ -37,10 +36,10 @@ namespace Ejercicio61
             }
             finally
             {
-                if (conexion.State == ConnectionState.Open)
-                {
-                    conexion.Close();
-                }
+               if (conexion.State == ConnectionState.Open)
+               {
+                   conexion.Close();
+               }
             }
 
             return ok;

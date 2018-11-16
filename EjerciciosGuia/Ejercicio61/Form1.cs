@@ -21,9 +21,28 @@ namespace Ejercicio61
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            Persona p = new Persona(txtNombre.Text, txtApellido.Text);
+            if (txtNombre.Text.Length > 0 && txtApellido.Text.Length > 0)
+            {
+                Persona persona = new Persona(txtNombre.Text, txtApellido.Text);
 
-            PersonaDAO.Guardar(p);
+                try
+                {
+                    if (PersonaDAO.Guardar(persona))
+                    {
+                        MessageBox.Show("Guardado correctamente!!");
+                        btnLeer_Click(sender, e);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("ERROR: " + ex.ToString());
+                }
+            }
+            else
+            {
+                MessageBox.Show("Las casillas de nombre y apellido no pueden estar vacías.");
+            }
         }
 
         private void btnLeer_Click(object sender, EventArgs e)
