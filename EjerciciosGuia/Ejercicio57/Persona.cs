@@ -8,6 +8,7 @@ using System.IO;
 
 namespace Ejercicio57
 {
+    [Serializable]
     public class Persona
     {
         public string nombre;
