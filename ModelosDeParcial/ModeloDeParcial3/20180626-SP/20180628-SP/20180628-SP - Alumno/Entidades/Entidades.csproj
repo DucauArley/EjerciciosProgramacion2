@@ -39,8 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dao.cs" />
+    <Compile Include="ErrorArchivoException.cs" />
+    <Compile Include="IArchivo.cs" />
     <Compile Include="Votacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerializarXml.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Threading;
 using Entidades;
 
 namespace _20180628_SP.v1
@@ -17,6 +17,7 @@ namespace _20180628_SP.v1
         Votacion votacion;
         Dictionary<string, Votacion.EVoto> participantes;
         List<PictureBox> graficos;
+        Thread thread = null;
 
         public FrmSenadores()
         {
@@ -51,7 +52,7 @@ namespace _20180628_SP.v1
         {
             if (this.groupBox2.InvokeRequired)
             {
-                Votacion.NOMBRE_EVENTO recall = new Votacion.NOMBRE_EVENTO(this.ManejadorVoto);
+                Votacion.Voto recall = new Votacion.Voto(this.ManejadorVoto);
                 this.Invoke(recall, new object[] { senador, voto });
             }
             else
@@ -87,7 +88,9 @@ namespace _20180628_SP.v1
                 {
                     MessageBox.Show((int.Parse(lblAfirmativo.Text) - int.Parse(lblNegativo.Text)) > 0 ? "Es Ley" : "No es Ley", txtLeyNombre.Text);
                     // Guardar resultados
-
+                    SerializarXml<Votacion> ser = new SerializarXml<Votacion>();
+                    ser.Guardar("Votacion.xml", votacion);
+                    //Tendria que poner el dao pero como no tengo las bases de datos no puedo
                 }
             }
         }
@@ -107,8 +110,10 @@ namespace _20180628_SP.v1
             lblAbstenciones.Text = "0";
 
             // EVENTO
-
+            votacion.EventoVotoEfectuado += ManejadorVoto;
             // THREAD
+            this.thread = new Thread(votacion.Simular);
+            thread.Start();
 
         }
     }
