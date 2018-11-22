@@ -28,7 +28,9 @@ namespace TestUnitario
             senadores.Add("4", Votacion.EVoto.Afirmativo);
 
             Votacion votacion = new Votacion("Ley para los Juan Carlos", senadores);
+            votacion.EventoVotoEfectuado += Manejador;
             votacion.Simular();
+
 
             Assert.IsTrue(votacion.ContadorAfirmativo == 2);
             Assert.IsTrue(votacion.ContadorAbstencion == 1);
