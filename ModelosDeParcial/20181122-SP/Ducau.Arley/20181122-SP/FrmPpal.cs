@@ -30,13 +30,21 @@ namespace _20181122_SP
 
         private void FrmPpal_Load(object sender, EventArgs e)
         {
+            vistaPatente1.finExposcion += ProximaPatente;
+            vistaPatente2.finExposcion += ProximaPatente;
+        }
+
+        private void IniciarSimulacion()
+        {
+            FinalizarSimulacion();
+
             ProximaPatente(vistaPatente1);
             ProximaPatente(vistaPatente2);
         }
 
         private void ProximaPatente(VistaPatente vistaPatente)
         {
-            if(cola.Count != 0)
+            if(cola.Count != 0 && cola != null)
             {
                 Thread t = new Thread(new ParameterizedThreadStart(vistaPatente.MostrarPatente));
 
@@ -70,7 +78,7 @@ namespace _20181122_SP
         {
             Sql sql = new Sql();
 
-            sql.Leer("dbo.patentes", out cola);
+            sql.Leer("Patentes", out cola);
         }
 
         private void FinalizarSimulacion()

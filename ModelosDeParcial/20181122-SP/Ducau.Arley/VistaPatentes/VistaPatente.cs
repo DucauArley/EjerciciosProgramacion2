@@ -43,7 +43,7 @@ namespace Patentes
                     Thread.Sleep(r.Next(2000, 5000));
 
                     // Agregar evento de que finalizó la exposición de la patente
-                    finExposcion += MostrarPatente;
+                    finExposcion.Invoke(this);
 
                     // ALUMNO
                 }
